@@ -26,6 +26,7 @@ void IncreaseSize(SeqList &L,int len){
     free(p);                        //释放原来的空间
 }
 
+
 int main(){
     SeqList L;                  //声明一个顺序表
     InitList(L);                //初始化顺序表
