@@ -19,7 +19,7 @@ int main()
 {
     int j;
     SqList L;
-    InitList(&L);
+    InitList(L);
     //printf("Hello World!");
     for (j = 0; j < L.length; j++)
         printf("data[%d]=%d\n", j, L.data[j]);
