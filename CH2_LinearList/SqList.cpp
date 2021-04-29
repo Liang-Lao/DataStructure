@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include <stdlib.h>
 
-#define MaxSize 50
+#define MaxSize 10
 typedef struct{
 	int data[MaxSize];          //顺序表元素 
 	int length;                 //顺序表当前长度 
@@ -19,9 +19,8 @@ int main()
 {
     SqList L;                   //声明一个顺序表
     InitList(L);                //初始化顺序表
-    printf("Hello World!");   //尝试打印整个data数组
-    for (int j = 0; j < L.length; j++)
+    //尝试打印整个data数组
+    for (int j = 0; j < MaxSize; j++)
         printf("data[%d]=%d\n", j, L.data[j]);
-    
     return 0;
 }
