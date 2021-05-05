@@ -13,6 +13,12 @@ void InitList(SeqList &L){
     L.data = (int *)malloc(InitSize * sizeof(int));
     L.length = 0;
     L.MaxSize = InitSize;
+
+    //初始化data数组
+    for (int n = 0; n < L.MaxSize; n++){
+        L.data[n]=n;
+        L.length++;
+    }
 }
 
 //增加动态数组的长度
@@ -29,7 +35,14 @@ void IncreaseSize(SeqList &L,int len){
 
 int main(){
     SeqList L;                  //声明一个顺序表
-    InitList(L);                //初始化顺序表
-
+    InitList(L);                //初始化顺序表i
+    //尝试打印原data数组
+    for (int i = 0; i < L.MaxSize; i++)
+        printf("data[%d]=%10d\t%p\n", i, L.data[i], &L.data[i]);
+    printf("__________________\n");
+    IncreaseSize(L, 5);
+    //尝试打印添加长度后的data数组
+    for (int j = 0; j < L.MaxSize; j++)
+        printf("data[%d]=%10d\t%p\n", j, L.data[j], &L.data[j]);
     return 0;
 }

@@ -21,6 +21,6 @@ int main()
     InitList(L);                //初始化顺序表
     //尝试打印整个data数组
     for (int j = 0; j < MaxSize; j++)
-        printf("data[%d]=%d\n", j, L.data[j]);
+        printf("data[%d]=%d\t%p\n", j, L.data[j], &L.data[j]);
     return 0;
 }
