@@ -36,7 +36,7 @@ void IncreaseSize(SeqList &L,int len){
 //尝试插入和删除代码
 int main(){
     SeqList L;                  //声明一个顺序表
-    InitList(L);                //初始化顺序表o
+    InitList(L);                //初始化顺序表
     //尝试打印原data数组
     for (int i = 0; i < L.MaxSize; i++)
         printf("data[%d]=%10d\t%p\n", i, L.data[i], &L.data[i]);
