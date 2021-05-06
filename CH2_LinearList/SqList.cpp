@@ -7,12 +7,12 @@ typedef struct{
 	int length;                 //顺序表当前长度 
 }SqList;                        //顺序表类型定义
 
-
+//！！！！！假设初始初始长度为6
 //顺序表的基本操作——初始化
 void InitList(SqList &L){
     for (int i = 0; i < MaxSize; i++)
         L.data[i]=0;            //将所有数据元素设置为默认的初始值
-    L.length = 6;         //顺序表初始长度为0
+    L.length = 6;               //顺序表初始长度为0
 }
 
 //顺序表的基本操作——插入
