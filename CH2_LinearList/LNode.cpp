@@ -162,4 +162,5 @@ int main()
     LinkList L;                 //声明一个指向单链表的！！指针！！
     InitList(L);                //初始化一个空表
     return 0;
+    
 }
