@@ -30,6 +30,8 @@
 
 ​		git push
 
+​		git config --global http.sslVerify "false" （网络不稳定，连接超时导致的，打开Git命令页面，执行git命令脚本：修改设置，解除ssl验证）
+
 # 3.删除操作
 
 ##     	(1)删除文件夹
